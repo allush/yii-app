@@ -10,6 +10,7 @@ RUN apt-get install -y \
   libjpeg62-turbo-dev \
   libfreetype6-dev \
   libmcrypt-dev \
+  zip \
   npm
 
 RUN docker-php-ext-install -j$(nproc) iconv mcrypt \
